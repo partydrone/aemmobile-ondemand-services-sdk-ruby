@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'content_producer_service/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "adobe-content-producer-service-sdk-ruby"
+  spec.name          = "adobe-content-producer-service-sdk"
   spec.version       = Adobe::ContentProducerService::VERSION
   spec.authors       = ["Andrew Porter"]
   spec.email         = ["andrew.porter@wavetronix.com"]
