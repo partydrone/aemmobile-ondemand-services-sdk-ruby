@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Andrew Porter"]
   spec.email         = ["andrew.porter@wavetronix.com"]
 
-  spec.summary       = %q{This gem contains code to call the Adobe Content Producer Service APIs with Ruby.}
-  spec.description   = %q{This gem contains code to call the Adobe Content Producer Service APIs with Ruby.}
+  spec.summary       = %q{This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.}
+  spec.description   = %q{This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
