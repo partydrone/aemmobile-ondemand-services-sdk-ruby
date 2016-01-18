@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'dps'
+require 'content_producer_service'
 
 require 'minitest/autorun'
 require 'vcr'
