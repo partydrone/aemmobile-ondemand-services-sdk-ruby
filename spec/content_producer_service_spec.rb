@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 module Adobe
-  describe DPS do
+  describe ContentProducerService do
     it "has a version number" do
-      ::Adobe::DPS::VERSION.wont_be_nil
+      ::Adobe::ContentProducerService::VERSION.wont_be_nil
     end
 
     it "does something useful" do

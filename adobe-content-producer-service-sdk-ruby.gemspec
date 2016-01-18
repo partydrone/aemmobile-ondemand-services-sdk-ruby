@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'dps/version'
+require 'content_producer_service/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "adobe-dps-sdk-ruby"
-  spec.version       = Adobe::DPS::VERSION
+  spec.name          = "adobe-content-producer-service-sdk-ruby"
+  spec.version       = Adobe::ContentProducerService::VERSION
   spec.authors       = ["Andrew Porter"]
   spec.email         = ["andrew.porter@wavetronix.com"]
 
-  spec.summary       = %q{This gem contains code to call the Adobe DPS SDK in Ruby.}
-  spec.description   = %q{This gem contains code to call the Adobe DPS SDK in Ruby.}
+  spec.summary       = %q{This gem contains code to call the Adobe Content Producer Service APIs with Ruby.}
+  spec.description   = %q{This gem contains code to call the Adobe Content Producer Service APIs with Ruby.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -24,4 +24,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "guard"
   spec.add_development_dependency "guard-minitest"
+  spec.add_development_dependency "vcr"
+  # spec.add_development_dependency "webmock"
+
+  spec.add_dependency "json"
 end
