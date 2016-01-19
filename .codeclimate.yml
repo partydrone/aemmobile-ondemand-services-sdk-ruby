@@ -2,6 +2,9 @@
 engines:
   rubocop:
     enabled: true
+    checks:
+      Rubocop/Metrics/LineLength:
+        endabled: false
 ratings:
   paths:
     - lib/**

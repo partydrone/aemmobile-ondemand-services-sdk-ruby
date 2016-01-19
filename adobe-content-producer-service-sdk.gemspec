@@ -4,29 +4,29 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'content_producer_service/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "adobe-content-producer-service-sdk"
+  spec.name          = 'adobe-content-producer-service-sdk'
   spec.version       = Adobe::ContentProducerService::VERSION
-  spec.authors       = ["Andrew Porter"]
-  spec.email         = ["andrew.porter@wavetronix.com"]
+  spec.authors       = ['Andrew Porter']
+  spec.email         = ['andrew.porter@wavetronix.com']
 
-  spec.summary       = %q{This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.}
-  spec.description   = %q{This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.summary       = %q(This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.)
+  spec.description   = %q(This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.)
+  spec.homepage      = ''
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 1.10"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "guard"
-  spec.add_development_dependency "guard-minitest"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "codeclimate-test-reporter"
-  # spec.add_development_dependency "webmock"
+  spec.add_development_dependency 'bundler', '~> 1.10'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'guard'
+  spec.add_development_dependency 'guard-minitest'
+  spec.add_development_dependency 'vcr'
+  spec.add_development_dependency 'codeclimate-test-reporter'
+  # spec.add_development_dependency 'webmock'
 
-  spec.add_dependency "json"
+  spec.add_dependency 'json'
 end
