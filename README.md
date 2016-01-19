@@ -1,5 +1,7 @@
 # Adobe Content Producer Service SDK for Ruby
 
+[![Dependency Status](https://gemnasium.com/wavetronix/adobe-content-producer-service-sdk-ruby.svg)](https://gemnasium.com/wavetronix/adobe-content-producer-service-sdk-ruby) [![Code Climate](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/coverage) [![Issue Count](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/badges/issue_count.svg)](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby) [![Build Status](https://travis-ci.org/wavetronix/adobe-content-producer-service-sdk-ruby.svg?branch=master)](https://travis-ci.org/wavetronix/adobe-content-producer-service-sdk-ruby)
+
 Use this SDK to interface with Adobe's Digital Publishing Suite Content Producer Service APIs from your Ruby app.
 
 ## Installation
