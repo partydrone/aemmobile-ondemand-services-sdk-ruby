@@ -1,8 +1,8 @@
-require 'content_producer_service/authentication'
-require 'content_producer_service/version'
+require 'dps/authentication'
+require 'dps/version'
 
 module Adobe
-  module ContentProducerService
+  module DPS
     # Your code here...
   end
 end
