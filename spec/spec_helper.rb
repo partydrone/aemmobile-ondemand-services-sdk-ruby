@@ -2,7 +2,7 @@ require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'content_producer_service'
+require 'dps'
 
 require 'minitest/autorun'
 require 'vcr'
