@@ -1,6 +1,6 @@
-# Adobe Content Producer Service SDK for Ruby
+# Adobe DPS SDK for Ruby
 
-[![Dependency Status](https://gemnasium.com/wavetronix/adobe-content-producer-service-sdk-ruby.svg)](https://gemnasium.com/wavetronix/adobe-content-producer-service-sdk-ruby) [![Code Climate](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/coverage) [![Issue Count](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby/badges/issue_count.svg)](https://codeclimate.com/github/wavetronix/adobe-content-producer-service-sdk-ruby) [![Build Status](https://travis-ci.org/wavetronix/adobe-content-producer-service-sdk-ruby.svg?branch=master)](https://travis-ci.org/wavetronix/adobe-content-producer-service-sdk-ruby)
+[![Dependency Status](https://gemnasium.com/wavetronix/adobe-dps-sdk-ruby.svg)](https://gemnasium.com/wavetronix/adobe-dps-sdk-ruby) [![Code Climate](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/coverage) [![Issue Count](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/badges/issue_count.svg)](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby) [![Build Status](https://travis-ci.org/wavetronix/adobe-dps-sdk-ruby.svg?branch=master)](https://travis-ci.org/wavetronix/adobe-dps-sdk-ruby)
 
 Use this SDK to interface with Adobe's Digital Publishing Suite Content Producer Service APIs from your Ruby app.
 
@@ -9,7 +9,7 @@ Use this SDK to interface with Adobe's Digital Publishing Suite Content Producer
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'adobe-content-producer-service-sdk'
+gem 'adobe-dps-sdk'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install adobe-content-producer-service-sdk
+    $ gem install adobe-dps-sdk
 
 ## Usage
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/wavetronix/adobe-content-producer-service-sdk-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wavetronix/adobe-dps-sdk-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License

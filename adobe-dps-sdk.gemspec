@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dps/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'adobe-content-producer-service-sdk'
+  spec.name          = 'adobe-dps-sdk'
   spec.version       = Adobe::DPS::VERSION
   spec.authors       = ['Andrew Porter']
   spec.email         = ['andrew.porter@wavetronix.com']
