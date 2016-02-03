@@ -5,8 +5,11 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'dps'
 
 require 'minitest/autorun'
-require 'vcr'
+require 'minitest/reporters'
 require 'webmock/minitest'
+require 'vcr'
+
+Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures'
