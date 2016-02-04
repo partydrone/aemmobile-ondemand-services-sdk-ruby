@@ -1,5 +1,5 @@
 module Adobe
-  module DPS
+  module DigitalPublishingSolution
     VERSION = '0.1.0'
   end
 end
