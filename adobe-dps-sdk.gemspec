@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'adobe/digital_publishing_solution/version'
+require 'content_producer_service/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'adobe-dps-sdk'
-  spec.version       = Adobe::DigitalPublishingSolution::VERSION
+  spec.version       = ContentProducerService::VERSION
   spec.authors       = ['Andrew Porter']
   spec.email         = ['andrew.porter@wavetronix.com']
 

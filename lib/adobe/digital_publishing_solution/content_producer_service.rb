@@ -1,1 +1,0 @@
-require 'adobe/digital_publishing_solution/content_producer_service/authentication'
