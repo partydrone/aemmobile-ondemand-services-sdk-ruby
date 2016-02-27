@@ -50,6 +50,8 @@ ContentProducerService.configure do |config|
 end
 ```
 
+It is highly recommended that you not include your API key and other credentials directly in your source code, but use `ENV` variables, instead—especially in a production environment.
+
 ## Usage
 
 TODO: Write usage instructions here
