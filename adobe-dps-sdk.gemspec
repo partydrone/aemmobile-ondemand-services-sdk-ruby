@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q(This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.)
   spec.description   = %q(This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.)
-  spec.homepage      = ''
+  spec.homepage      = 'http://wavetronix.github.io/adobe-dps-sdk-ruby'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
