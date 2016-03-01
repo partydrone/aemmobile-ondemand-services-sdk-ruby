@@ -1,6 +1,6 @@
 # Adobe Experience Manager Mobile SDK for Ruby
 
-[![Dependency Status](https://gemnasium.com/wavetronix/adobe-dps-sdk-ruby.svg)](https://gemnasium.com/wavetronix/adobe-dps-sdk-ruby) [![Code Climate](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/coverage) [![Issue Count](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby/badges/issue_count.svg)](https://codeclimate.com/github/wavetronix/adobe-dps-sdk-ruby) [![Build Status](https://travis-ci.org/wavetronix/adobe-dps-sdk-ruby.svg?branch=master)](https://travis-ci.org/wavetronix/adobe-dps-sdk-ruby)
+[![Dependency Status](https://gemnasium.com/wavetronix/aemmobile-sdk-ruby.svg)](https://gemnasium.com/wavetronix/aemmobile-sdk-ruby) [![Code Climate](https://codeclimate.com/github/wavetronix/aemmobile-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/wavetronix/aemmobile-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/wavetronix/aemmobile-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/wavetronix/aemmobile-sdk-ruby/coverage) [![Issue Count](https://codeclimate.com/github/wavetronix/aemmobile-sdk-ruby/badges/issue_count.svg)](https://codeclimate.com/github/wavetronix/aemmobile-sdk-ruby) [![Build Status](https://travis-ci.org/wavetronix/aemmobile-sdk-ruby.svg?branch=master)](https://travis-ci.org/wavetronix/aemmobile-sdk-ruby)
 
 Use this SDK to interface with the Adobe Experience Manager Mobile (AEM Mobile) Content Producer Service APIs from your Ruby app.
 
@@ -9,7 +9,7 @@ Use this SDK to interface with the Adobe Experience Manager Mobile (AEM Mobile) 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'adobe-dps-sdk'
+gem 'aemmobile-sdk'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install adobe-dps-sdk
+    $ gem install aemmobile-sdk
 
 ## Prerequisites
 
@@ -50,6 +50,8 @@ ContentProducerService.configure do |config|
 end
 ```
 
+It is highly recommended that you not include your API key and other credentials directly in your source code, but use `ENV` variables, instead—especially in a production environment.
+
 ## Usage
 
 TODO: Write usage instructions here
@@ -63,11 +65,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Resources
 
 - [Adobe Experience Manager Mobile Help](https://helpx.adobe.com/digital-publishing-solution/topics.html)
-- [AEM Mobile Content Producer Service API documentation](http://wavetronix.github.io/adobe-dps-sdk-ruby/api-docs)
+- [AEM Mobile Content Producer Service API documentation](http://wavetronix.github.io/aemmobile-sdk-ruby/api-docs)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/wavetronix/adobe-dps-sdk-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wavetronix/aemmobile-sdk-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 ## License
 
