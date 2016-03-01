@@ -5,6 +5,7 @@ gem 'rake'
 group :development do
   gem 'guard'
   gem 'guard-minitest'
+  gem 'pry'
   gem 'yard'
 end
 
