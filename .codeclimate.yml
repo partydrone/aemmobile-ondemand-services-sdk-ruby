@@ -4,7 +4,7 @@ engines:
     enabled: true
     checks:
       Rubocop/Metrics/LineLength:
-        endabled: false
+        enabled: false
 ratings:
   paths:
     - lib/**
