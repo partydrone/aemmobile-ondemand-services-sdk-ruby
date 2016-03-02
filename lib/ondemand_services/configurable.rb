@@ -1,4 +1,4 @@
-module ContentProducerService
+module OndemandServices
 
   # Configuration options for {Client}, defaulting to values in {Default}
   module Configurable
@@ -16,7 +16,7 @@ module ContentProducerService
 
     class << self
 
-      # List of configurable keys for {ContentProducerService::Client}
+      # List of configurable keys for {OndemandServices::Client}
       # @return [Array] of option keys
       def keys
         @keys ||= [
@@ -35,8 +35,8 @@ module ContentProducerService
 
     # Reset configuration options to default values
     def reset!
-      ContentProducerService::Configurable.keys.each do |key|
-        instance_variable_set(:"@#{key}", ContentProducerService::Default.options[key])
+      OndemandServices::Configurable.keys.each do |key|
+        instance_variable_set(:"@#{key}", OndemandServices::Default.options[key])
       end
       self
     end
@@ -53,7 +53,7 @@ module ContentProducerService
     private
 
     def options
-      Hash[ContentProducerService::Configurable.keys.map{ |key| [key, instance_variable_get(:"@#{key}")] }]
+      Hash[OndemandServices::Configurable.keys.map{ |key| [key, instance_variable_get(:"@#{key}")] }]
     end
   end
 end

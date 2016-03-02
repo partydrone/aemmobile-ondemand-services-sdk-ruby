@@ -1,32 +1,32 @@
 require 'spec_helper'
 
-module ContentProducerService
+module OndemandServices
   describe Client do
     before do
-      ContentProducerService.reset!
+      OndemandServices.reset!
     end
 
     after do
-      ContentProducerService.reset!
+      OndemandServices.reset!
     end
 
     describe "module configuration" do
       before do
-        ContentProducerService.reset!
-        ContentProducerService.configure do |config|
-          ContentProducerService::Configurable.keys.each do |key|
+        OndemandServices.reset!
+        OndemandServices.configure do |config|
+          OndemandServices::Configurable.keys.each do |key|
             config.send("#{key}=", "Some #{key}")
           end
         end
       end
 
       after do
-        ContentProducerService.reset!
+        OndemandServices.reset!
       end
 
       it "inherits the module configuration" do
-        client = ContentProducerService::Client.new
-        ContentProducerService::Configurable.keys.each do |key|
+        client = OndemandServices::Client.new
+        OndemandServices::Configurable.keys.each do |key|
           client.instance_variable_get(:"@#{key}").must_equal "Some #{key}"
         end
       end
@@ -42,7 +42,7 @@ module ContentProducerService
         end
 
         it "overrides module configuration" do
-          client = ContentProducerService::Client.new(@opts)
+          client = OndemandServices::Client.new(@opts)
           client.client_id.must_equal 'My client_id'
           client.client_secret.must_equal 'My client_secret'
           client.device_id.must_equal 'My device_id'
@@ -50,7 +50,7 @@ module ContentProducerService
         end
 
         it "can set configuration after initialization" do
-          client = ContentProducerService::Client.new
+          client = OndemandServices::Client.new
           client.configure do |config|
             @opts.each do |key, value|
               config.send("#{key}=", value)
@@ -63,13 +63,13 @@ module ContentProducerService
         end
 
         it "masks secrets on inspect" do
-          client = ContentProducerService::Client.new(client_secret: '1234567890abcdef')
+          client = OndemandServices::Client.new(client_secret: '1234567890abcdef')
           inspected = client.inspect
           inspected.wont_include '1234567890abcdef'
         end
 
         it "masks tokens on inspect" do
-          client = ContentProducerService::Client.new(device_token: '1234567890abcdef')
+          client = OndemandServices::Client.new(device_token: '1234567890abcdef')
           inspected = client.inspect
           inspected.wont_include '1234567890abcdef'
         end

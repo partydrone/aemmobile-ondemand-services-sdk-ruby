@@ -1,16 +1,16 @@
-require 'content_producer_service/configurable'
+require 'ondemand_services/configurable'
 
-module ContentProducerService
+module OndemandServices
 
   # Client for the AEM Mobile Content Producer Service API
   #
   # @see http://wavetronix.github.io/adobe-dps-sdk-ruby/api-docs
   class Client
-    include ContentProducerService::Configurable
+    include OndemandServices::Configurable
 
     def initialize(options = {})
-      ContentProducerService::Configurable.keys.each do |key|
-        instance_variable_set(:"@#{key}", options[key] || ContentProducerService.instance_variable_get(:"@#{key}"))
+      OndemandServices::Configurable.keys.each do |key|
+        instance_variable_set(:"@#{key}", options[key] || OndemandServices.instance_variable_get(:"@#{key}"))
       end
 
       # TODO: Authenticate here?

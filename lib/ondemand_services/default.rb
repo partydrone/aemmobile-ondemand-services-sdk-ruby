@@ -1,4 +1,4 @@
-module ContentProducerService
+module OndemandServices
 
   # Default configuration options for {Client}
   module Default
@@ -26,31 +26,31 @@ module ContentProducerService
       # Configuration options
       # @return [Hash]
       def options
-        Hash[ContentProducerService::Configurable.keys.map { |key| [key, send(key)] }]
+        Hash[OndemandServices::Configurable.keys.map { |key| [key, send(key)] }]
       end
 
       # Default client ID from ENV
       # @return [String]
       def client_id
-        ENV['CONTENT_PRODUCER_SERVICE_CLIENT_ID']
+        ENV['ONDEMAND_SERVICES_CLIENT_ID']
       end
 
       # Default client secret from ENV
       # @return [String]
       def client_secret
-        ENV['CONTENT_PRODUCER_SERVICE_CLIENT_SECRET']
+        ENV['ONDEMAND_SERVICES_CLIENT_SECRET']
       end
 
       # Default device ID from ENV
       # @return [String]
       def device_id
-        ENV['CONTENT_PRODUCER_SERVICE_DEVICE_ID']
+        ENV['ONDEMAND_SERVICES_DEVICE_ID']
       end
 
       # Default device token from ENV
       # @return [String]
       def device_token
-        ENV['CONTENT_PRODUCER_SERVICE_DEVICE_TOKEN']
+        ENV['ONDEMAND_SERVICES_DEVICE_TOKEN']
       end
     end
   end

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'content_producer_service/version'
+require 'ondemand_services/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'aemmobile-sdk'
-  spec.version       = ContentProducerService::VERSION
+  spec.name          = 'aemmobile-ondemand-services-sdk'
+  spec.version       = OndemandServices::VERSION
   spec.authors       = ['Andrew Porter']
   spec.email         = ['andrew.porter@wavetronix.com']
 
-  spec.summary       = %q(This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.)
-  spec.description   = %q(This gem contains code to call Adobe's DPS Content Producer Service APIs with Ruby.)
-  spec.homepage      = 'http://wavetronix.github.io/aemmobile-sdk-ruby'
+  spec.summary       = %q(This gem contains code to call the Adobe Experience Manager On-Demand Services APIs with Ruby.)
+  spec.description   = %q(This gem contains code to call the Adobe Experience Manager On-Demand Services APIs with Ruby.)
+  spec.homepage      = 'http://github.com/wavetronix/aemmobile-ondemand-services-sdk-ruby'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
