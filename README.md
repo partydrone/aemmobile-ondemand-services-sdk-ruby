@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/wavetronix/aemmobile-ondemand-services-sdk-ruby.svg?branch=master)](https://travis-ci.org/wavetronix/aemmobile-ondemand-services-sdk-ruby)
 [![Code Climate](https://codeclimate.com/github/wavetronix/aemmobile-ondemand-services-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/wavetronix/aemmobile-ondemand-services-sdk-ruby)
-[![Coverage Status](https://coveralls.io/repos/github/wavetronix/aemmobile-ondemand-services-sdk-ruby/badge.svg?branch=master)](https://coveralls.io/github/wavetronix/aemmobile-ondemand-services-sdk-ruby?branch=master)
+[![Test Coverage](https://codeclimate.com/github/wavetronix/aemmobile-ondemand-services-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/wavetronix/aemmobile-ondemand-services-sdk-ruby/coverage)
 [![Issue Count](https://codeclimate.com/github/wavetronix/aemmobile-ondemand-services-sdk-ruby/badges/issue_count.svg)](https://codeclimate.com/github/wavetronix/aemmobile-ondemand-services-sdk-ruby)
 [![Dependency Status](https://gemnasium.com/wavetronix/aemmobile-ondemand-services-sdk-ruby.svg)](https://gemnasium.com/wavetronix/aemmobile-ondemand-services-sdk-ruby)
 
