@@ -17,6 +17,4 @@ group :test do
   gem 'webmock'
 end
 
-# Specify your gem's dependencies in adobe-dps-sdk.gemspec
-
 gemspec
