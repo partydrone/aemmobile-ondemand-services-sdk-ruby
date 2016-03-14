@@ -1,4 +1,7 @@
+require 'json'
 require 'httparty'
+require 'ostruct'
+require 'securerandom'
 
 module OndemandServices
   class Client
@@ -8,13 +11,14 @@ module OndemandServices
         base_url = OndemandServices::Default::AUTHORIZATION_SERVICE_ENDPOINT + '/permissions'
         headers = {
           'x-dps-api-key' => client_id,
-          'x-dps-client-version' => '0.1.0',
-          'x-dps-client-request-id' => 'a985b15e-4385-01e5-335f-c573e246b44a', # Needs to be configuarable
-          'x-dps-client-session-id' => 'df584325-3825-ade4-ff32-a486c25e4456', # Needs to be configuarable
+          'x-dps-client-version' => OndemandServices::VERSION,
+          'x-dps-client-request-id' => SecureRandom.uuid,
+          'x-dps-client-session-id' => session_id,
           'c-dps-client-id' => client_id,
           'authorization' => access_token
         }
         response = HTTParty.get(base_url, headers: headers)
+        JSON.parse(response.to_json, object_class: OpenStruct)
       end
     end
   end
