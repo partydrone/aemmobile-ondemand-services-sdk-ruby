@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'hashie'
 
 group :development do
   gem 'guard'
