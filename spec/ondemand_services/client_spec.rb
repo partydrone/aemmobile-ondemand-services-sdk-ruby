@@ -75,5 +75,33 @@ module OndemandServices
         end
       end
     end
+
+    describe "authentication" do
+      before do
+        OndemandServices.reset!
+        @client = OndemandServices.client
+      end
+
+      describe "with module-level config" do
+
+      end
+
+      describe "with class-level config" do
+
+      end
+    end
+
+    # TODO: Add tests for class and instance methods
+
+    describe "error handling" do
+      before do
+        OndemandServices.reset!
+      end
+
+      it "raises on 404" do
+        # TODO: stub 404 return status
+        OndemandServices.get('/booya').must_raise_error OndemandServices::NotFound
+      end
+    end
   end
 end
