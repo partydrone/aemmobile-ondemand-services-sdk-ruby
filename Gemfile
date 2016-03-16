@@ -13,6 +13,8 @@ group :test do
   gem 'coveralls', require: false
   gem 'minitest'
   gem 'minitest-reporters'
+  gem 'simplecov', require: false
+  gem 'simplecov-json', require: false
 end
 
 gemspec
