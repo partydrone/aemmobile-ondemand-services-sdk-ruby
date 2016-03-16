@@ -39,13 +39,13 @@ Send the completed form to Adobe Developer Support:
 
 ### Generate the `device_id` and `device_token`
 
-Once you receive your API key, generate the device_id and device_token. Go to
+Once you receive your API key, generate the `device_id` and `device_token`. Go to
 https://aex.aemmobile.adobe.com and do the following:
 
 - Provide the API key
 - Sign in with an AdobeID that you requested to whitelist (on the request form)
 
-If all conditions are met, a device_id and device_token will be generated.
+If all conditions are met, a `device_id` and `device_token` will be generated.
 
 ## Configuration
 

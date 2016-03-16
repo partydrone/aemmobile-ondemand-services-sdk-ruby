@@ -32,25 +32,25 @@ module OndemandServices
       # Default client ID from ENV
       # @return [String]
       def client_id
-        ENV['ONDEMAND_SERVICES_CLIENT_ID']
+        ENV['AEMMOBILE_ONDEMAND_SERVICES_CLIENT_ID']
       end
 
       # Default client secret from ENV
       # @return [String]
       def client_secret
-        ENV['ONDEMAND_SERVICES_CLIENT_SECRET']
+        ENV['AEMMOBILE_ONDEMAND_SERVICES_CLIENT_SECRET']
       end
 
       # Default device ID from ENV
       # @return [String]
       def device_id
-        ENV['ONDEMAND_SERVICES_DEVICE_ID']
+        ENV['AEMMOBILE_ONDEMAND_SERVICES_DEVICE_ID']
       end
 
       # Default device token from ENV
       # @return [String]
       def device_token
-        ENV['ONDEMAND_SERVICES_DEVICE_TOKEN']
+        ENV['AEMMOBILE_ONDEMAND_SERVICES_DEVICE_TOKEN']
       end
     end
   end
