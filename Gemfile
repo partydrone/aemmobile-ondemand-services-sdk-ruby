@@ -13,8 +13,6 @@ group :test do
   gem 'coveralls', require: false
   gem 'minitest'
   gem 'minitest-reporters'
-  gem 'vcr'
-  gem 'webmock'
 end
 
 gemspec
