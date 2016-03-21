@@ -62,8 +62,14 @@ end
 ```
 
 It is highly recommended that you not include your API key and other credentials
-directly in your source code, but use `ENV` variables, instead—especially in a
-production environment.
+directly in your source code. Use `ENV` variables, instead—especially in a
+production environment. If you do not explicitly configure the gem as described
+above, it looks for the following environment variables by default:
+
+- `AEMMOBILE_ONDEMAND_SERVICES_CLIENT_ID`
+- `AEMMOBILE_ONDEMAND_SERVICES_CLIENT_SECRET`
+- `AEMMOBILE_ONDEMAND_SERVICES_DEVICE_ID`
+- `AEMMOBILE_ONDEMAND_SERVICES_DEVICE_TOKEN`
 
 ## Usage
 
@@ -89,7 +95,7 @@ git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygem
 Bug reports and pull requests are welcome on GitHub at
 https://github.com/wavetronix/aemmobile-ondemand-services-sdk-ruby. This project
 is intended to be a safe, welcoming space for collaboration, and contributors
-are expected to adhere to the [Contributor Covenant](contributor-covenant.org)
+are expected to adhere to the [Contributor Covenant](CODE_OF_CONDUCT.md)
 code of conduct.
 
 ## License
